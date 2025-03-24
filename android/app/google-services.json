@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "229018527318",
+    "project_id": "qchat-129c3",
+    "storage_bucket": "qchat-129c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229018527318:android:3192aa468d2b817e233df7",
+        "android_client_info": {
+          "package_name": "com.example.q_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "229018527318-8smb3bjru81lsl7l3fj5q3ipadj0ofe2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhjGArJvOc7hTOhqSEtkZ4vh6rGLH-J6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "229018527318-8smb3bjru81lsl7l3fj5q3ipadj0ofe2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "229018527318-esqajkmoag6nmb8836sjust7f30b7j22.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.qChat.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229018527318:android:fc888bd872d735b1233df7",
+        "android_client_info": {
+          "package_name": "com.example.reels"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "229018527318-8smb3bjru81lsl7l3fj5q3ipadj0ofe2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhjGArJvOc7hTOhqSEtkZ4vh6rGLH-J6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "229018527318-8smb3bjru81lsl7l3fj5q3ipadj0ofe2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "229018527318-esqajkmoag6nmb8836sjust7f30b7j22.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.qChat.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
