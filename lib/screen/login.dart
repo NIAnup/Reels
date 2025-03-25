@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:reels/controller/auth/authcontroller.dart';
+import 'package:reels/screen/registration.dart';
 import 'package:reels/widget/customTextfield.dart';
 import 'package:reels/widget/custombutton.dart';
 import 'package:reels/widget/sizeboxextention.dart';
 
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+  LoginScreen({super.key});
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+  final AuthController authController = Get.put(AuthController());
 
   @override
   Widget build(BuildContext context) {
@@ -76,11 +82,34 @@ class LoginScreen extends StatelessWidget {
                       Center(
                         child: Custombutton(
                           text: "Sign In",
-                          onTap: () {},
+                          onTap: () {
+                            authController.handleLogin(
+                              emailController.text,
+                              passwordController.text,
+                            );
+                          },
                           height: 50,
                           width: 300,
                         ),
                       ),
+                      Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Center(
+                          child: TextButton(
+                            onPressed: () {
+                              Get.off(RegistrationScreen());
+                            },
+                            child: Text(
+                              "Already have an account? Sign In",
+                              style: TextStyle(
+                                  fontFamily: "uber",
+                                  color: Colors.black,
+                                  fontSize: 15),
+                            ),
+                          ),
+                        ),
+                      ),
+                      20.0.h,
                       const Padding(
                         padding: const EdgeInsets.all(15.0),
                         child: Center(

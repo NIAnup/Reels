@@ -1,11 +1,13 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:reels/firebase_options.dart';
 import 'package:reels/screen/homepage/home_page.dart';
 import 'package:reels/screen/login.dart';
 import 'package:reels/screen/addpost/newpost.dart';
 import 'package:reels/screen/registration.dart';
 import 'package:reels/screen/homepagevideoplayer.dart';
+import 'package:reels/screen/splashscreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,14 +23,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomePage(),
+      home: Splash(),
     );
   }
 }
